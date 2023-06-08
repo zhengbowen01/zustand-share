@@ -1,0 +1,19 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #eff2f5;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  min-height: 100%;
+  position: relative;
+  padding: 20px;
+}
