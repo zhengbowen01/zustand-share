@@ -3,9 +3,9 @@ import { InputNumber, Button } from "antd";
 import useInfoStore from "./use-info-store";
 
 export default function AgeChanger() {
-  const age = useInfoStore((state) => state.age);
-  const changeAge = useInfoStore((state) => state.changeAge);
-  // const { age, changeAge } = useInfoStore();
+  // const age = useInfoStore((state) => state.age);
+  // const changeAge = useInfoStore((state) => state.changeAge);
+  const { age, changeAge } = useInfoStore();
   const [newAge, setNewAge] = useState(age);
 
   console.log("reconcile age changer");
