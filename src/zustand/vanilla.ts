@@ -32,14 +32,14 @@ export function createStore<State>(
     };
   };
 
-  const api: Store<State> = {
+  const store: Store<State> = {
     getState,
     setState,
     subscribe
   };
 
-  state = createState(setState, getState, api);
-  return api;
+  state = createState(setState, getState, store);
+  return store;
 }
 
 export default createStore;
